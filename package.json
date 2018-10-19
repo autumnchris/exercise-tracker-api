@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/autumnchris/exercise-tracker-api/issues"
   },
-  "homepage": "https://github.com/autumnchris/exercise-tracker-api#readme"
+  "homepage": "https://github.com/autumnchris/exercise-tracker-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
 }
