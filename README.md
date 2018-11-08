@@ -4,6 +4,10 @@ My project for the [Exercise Tracker challenge](https://learn.freecodecamp.org/a
 
 ---
 
+## Demo
+
+View project demo at [https://autumnchris-exercise-tracker.herokuapp.com](https://autumnchris-exercise-tracker.herokuapp.com).
+
 ## Installation
 
 ```
