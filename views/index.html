@@ -18,6 +18,19 @@
       <p>View the <a href="https://github.com/autumnchris/exercise-tracker-api" target="_blank">source code</a> for this project.</p>
       <hr>
     </header>
-    <main></main>
+    <main>
+      <h3>Project Usage</h3>
+      <h4>Create a User</h4>
+      <p>Create a username in the form below to get a corresponding user ID that you can use to add exercises for that registered user.</p>
+      <form class="new-user" action="/api/exercise/new-user" method="post">
+        <div class="form-group">
+          <label for="user">Username</label>
+          <input type="text" name="newUser" id="user" required>
+        </div>
+        <div class="button-group">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </main>
   </body>
 </html>
