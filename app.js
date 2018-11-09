@@ -33,6 +33,14 @@ app.post('/api/exercise/new-user', (req, res) => {
   });
 });
 
+app.get('/api/exercise/users', (req, res) => {
+  User.find({}, '_id username').then(userData => {
+    res.json(userData);
+  }).catch(error => {
+    res.json({ error });
+  });
+});
+
 app.use((req, res) => {
   res.sendFile(`${__dirname}/views/404.html`, 404);
 });
