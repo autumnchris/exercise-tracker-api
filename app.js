@@ -17,6 +17,22 @@ app.get('/', (req, res) => {
 
 app.use(express.static(`${__dirname}/public`));
 
+app.post('/api/exercise/new-user', (req, res) => {
+  const user = new User({
+    username: req.body.newUser,
+    log: [],
+    count: 0
+  });
+  user.save().then(userData => {
+    res.json({
+      username: userData.username,
+      _id: userData._id
+    });
+  }).catch(error => {
+    res.json({ error });
+  });
+});
+
 app.use((req, res) => {
   res.sendFile(`${__dirname}/views/404.html`, 404);
 });
