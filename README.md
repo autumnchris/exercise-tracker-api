@@ -4,6 +4,15 @@ My project for the [Exercise Tracker challenge](https://learn.freecodecamp.org/a
 
 ---
 
+## Built With
+* [Express.js](https://expressjs.com)
+* [Mongoose](https://mongoosejs.com)
+* [MongoDB](https://www.mongodb.com)
+* HTML5
+* CSS3
+* [Moment.js](https://momentjs.com)
+* [Google Fonts](https://fonts.google.com)
+
 ## Demo
 
 View project demo at [https://autumnchris-exercise-tracker.herokuapp.com](https://autumnchris-exercise-tracker.herokuapp.com).
