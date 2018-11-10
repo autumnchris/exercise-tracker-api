@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const moment = require('moment');
 const Exercise = require('./models/exercise.js');
 const User = require('./models/user.js');
 
