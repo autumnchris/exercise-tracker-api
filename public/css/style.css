@@ -43,3 +43,9 @@ h2 {
   padding: 18px 0;
   text-align: center;
 }
+
+main {
+  margin: auto;
+  max-width: 600px;
+  padding-bottom: 80px;
+}
