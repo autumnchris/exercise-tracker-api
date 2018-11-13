@@ -70,7 +70,7 @@ app.post('/api/exercise/add', (req, res) => {
 });
 
 app.get('/api/exercise/users', (req, res) => {
-  User.find({}, '_id username').then(userData => {
+  User.find({}, '_id username').sort({username: 'asc'}).then(userData => {
     res.json(userData);
   }).catch(error => {
     res.json({ error });
