@@ -11,7 +11,7 @@ const ExerciseSchema = Schema({
     required: true
   },
   date: {
-    type: Number,
+    type: String,
     required: true
   }
 });
