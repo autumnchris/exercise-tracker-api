@@ -86,7 +86,7 @@ app.get('/api/exercise/log/:userid', (req, res) => {
   if ((moment(from, 'YYYY-MM-DD', true).isValid() && moment(to, 'YYYY-MM-DD', true).isValid()) || !from && !to) {
     User.findById(req.params.userid, '_id username log count').populate({
       path: 'log',
-      select: `description duration date -_id`,
+      select: 'description duration date -_id',
       options: {
         sort: { date: 'desc' }
       }
