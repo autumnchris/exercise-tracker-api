@@ -55,10 +55,19 @@
         </div>
       </form>
       <h4>Get a List of Users</h4>
-      <p>To get a JSON array of all the registered users, go to the path <code>/api/exercise/users</code>.</p>
+      <p>To get a list of all the registered users, go to the path:</p>
+<pre><code>/api/exercise/users</code></pre>
       <h4>Get Exercise Data for a User</h4>
-      <p>To get JSON data for a specific user, go to the path <code>/api/exercise/log</code> and then add a parameter of the user's ID. For example, if I wanted to get the data for a user whose ID is <code>5bea63e40f02c48aab5f0e38</code>, I would type <code>/api/exercise/log/5bea63e40f02c48aab5f0e38</code>.</p>
-      <p>I can also filter the list of exercise logs that get returned. I can limit the quantity of logs by adding a query input to the path such as <code>/api/exercise/log/5bea63e40f02c48aab5f0e38?limit=2</code>. I can also return logs within a specific date range such as <code>/api/exercise/log/5bea63e40f02c48aab5f0e38?from=2013-10-31&to=2019-12-25</code>. I can even both limit the quantity and select a date range such as <code>/api/exercise/log/5bea63e40f02c48aab5f0e38?from=2013-10-31&to=2019-12-25&limit=2</code>.</p>
+      <p>To get data for a specific user, go to the path:</p>
+<pre><code>/api/exercise/log</code></pre>
+      <p>and then add a parameter of the user's ID. For example, if I wanted to get the data for a user whose ID is <code>5bea63e40f02c48aab5f0e38</code>, I would go to the path:</p>
+<pre><code>/api/exercise/log/5bea63e40f02c48aab5f0e38</code></pre>
+      <p>I can also filter the list of exercise logs that get returned. I can limit the quantity of logs by adding a query input to the path such as:</p>
+<pre><code>/api/exercise/log/5bea63e40f02c48aab5f0e38?limit=2</code></pre>
+      <p>I can also return logs within a specific date range such as:</p>
+<pre><code>/api/exercise/log/5bea63e40f02c48aab5f0e38?from=2013-10-31&to=2019-12-25</code></pre>
+      <p>I can also both limit the quantity as well as select a date range such as:</p>
+<pre><code>/api/exercise/log/5bea63e40f02c48aab5f0e38?from=2013-10-31&to=2019-12-25&limit=2</code></pre>
     </main>
   </body>
 </html>
