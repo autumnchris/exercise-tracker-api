@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/autumnchris/exercise-tracker-api/issues"
   },
-  "homepage": "https://github.com/autumnchris/exercise-tracker-api#readme",
+  "homepage": "https://autumnchris-exercise-tracker.herokuapp.com",
   "dependencies": {
     "body-parser": "^1.18.3",
     "ejs": "^3.0.1",
