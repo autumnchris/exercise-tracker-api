@@ -1,7 +1,7 @@
 const express = require('express');
 const moment = require('moment');
-const Exercise = require('.././models/exercise.js');
-const User = require('.././models/user.js');
+const Exercise = require('../models/exercise');
+const User = require('../models/user');
 const router = express.Router();
 
 router.post('/new-user', (req, res, next) => {
