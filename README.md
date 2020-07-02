@@ -11,6 +11,7 @@ My project for the [Exercise Tracker challenge](https://learn.freecodecamp.org/a
 * [EJS](https://ejs.co)
 * CSS3
 * [Moment.js](https://momentjs.com)
+* [Normalize.css](https://necolas.github.io/normalize.css)
 * [Google Fonts](https://fonts.google.com)
 
 ## Demo
