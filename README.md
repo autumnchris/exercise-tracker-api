@@ -14,18 +14,32 @@ My project for the [Exercise Tracker challenge](https://learn.freecodecamp.org/a
 * [dotenv](https://github.com/motdotla/dotenv)
 * [Normalize.css](https://necolas.github.io/normalize.css)
 * [Google Fonts](https://fonts.google.com)
+* [nodemon](https://nodemon.io)
 
 ## Demo
 
 View project demo at [https://autumnchris-exercise-tracker.herokuapp.com](https://autumnchris-exercise-tracker.herokuapp.com).
 
-## Installation
+## Instructions
 
+After forking and cloning, navigate to the repository in your command line and install the NPM packages:
 ```
-$ git clone https://github.com/autumnchris/exercise-tracker-api.git
-$ cd exercise-tracker-api
-$ npm install
-$ npm start
+npm install
 ```
 
-Go to `http://localhost:3000`.
+Create a `.env` file in the root of the repository and add the following environment variables:
+```
+MONGO_URI=<your-mongodb-uri>
+```
+
+Run the following script in your command line if starting the repository in development mode:
+```
+npm run dev
+```
+
+Run the following script in your command line if starting the repository in production mode:
+```
+npm start
+```
+
+Once the server is running, go to `http://localhost:3000` in your browser.

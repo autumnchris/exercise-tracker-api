@@ -4,8 +4,8 @@
   "description": "My project for the Exercise Tracker challenge as part of the curriculum for the Apis and Microservices Certification on freeCodeCamp.",
   "main": "app.js",
   "scripts": {
-    "start": "node app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app",
+    "start": "node app"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
     "express": "^4.16.4",
     "moment": "^2.22.2",
     "mongoose": "^5.8.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
