@@ -24,15 +24,13 @@ exports.addExercise = (req, res, next) => {
           }
         });
       }).catch(error => {
-        res.json({ error });
+        res.send(error);
       });
     }).catch(error => {
-      res.json({ error });
+      res.send(error);
     });
   }
   else {
-    res.json({
-      error: 'Invalid date. Please use YYYY-MM-DD format.'
-    });
+    res.send('The submitted date is invalid. Please use YYYY-MM-DD format.');
   }
 };

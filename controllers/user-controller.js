@@ -13,7 +13,7 @@ exports.createUser = (req, res, next) => {
       _id: userData._id
     });
   }).catch(error => {
-    res.json({ error });
+    res.send(error);
   });
 }
 
@@ -23,7 +23,7 @@ exports.fetchUsers = (req, res, next) => {
   }).then(userData => {
     res.json({ userData });
   }).catch(error => {
-    res.json({ error });
+    res.send(error);
   });
 }
 
@@ -67,12 +67,10 @@ exports.fetchUserLog = (req, res, next) => {
         count: userData.count
       });
     }).catch(error => {
-      res.json({ error });
+      res.send(error);
     });
   }
   else {
-    res.json({
-      error: 'Invalid date range.'
-    });
+    res.send('The submitted date range is invalid.');
   }
 }
