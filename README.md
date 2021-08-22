@@ -1,6 +1,8 @@
 # Exercise Tracker API
 
-My project for the [Exercise Tracker challenge](https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/exercise-tracker) as part of the curriculum for the Apis and Microservices Certification on [freeCodeCamp](https://www.freecodecamp.org).
+An Express.js API that creates a username and gets a list of exercises for that unique username as well as logs new exercises.
+
+Inspired by the [Exercise Tracker challenge](https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/exercise-tracker) as part of the curriculum for the [APIs and Microservices Certification](https://www.freecodecamp.org/learn/apis-and-microservices) on [freeCodeCamp](https://www.freecodecamp.org).
 
 ---
 
