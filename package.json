@@ -16,14 +16,15 @@
   "bugs": {
     "url": "https://github.com/autumnchris/exercise-tracker-api/issues"
   },
-  "homepage": "https://autumnchris-exercise-tracker.herokuapp.com",
+  "homepage": "https://autumnchris-exercise-tracker.herokuapp.com/api",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "dotenv": "^8.2.0",
+    "dotenv": "^16.0.0",
     "ejs": "^3.0.1",
     "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.1",
     "moment": "^2.22.2",
-    "mongoose": "^5.8.7"
+    "mongoose": "^6.2.5",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"

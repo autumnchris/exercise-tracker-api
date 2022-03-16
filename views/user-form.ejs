@@ -1,0 +1,17 @@
+<%- include ('./partials/header-content') -%>
+<main>
+  <section>
+    <h2>Create a User</h2>
+    <form class="new-user" method="post" novalidate>
+      <div class="form-group">
+        <label for="user">Username <abbr class="required-field" title="A username is required." aria-label="required">*</abbr></label>
+        <input type="text" name="username" value="<%= typeof data !== 'undefined' ? data.username : '' %>" id="user" required />
+      </div>
+      <div class="button-group">
+        <button type="submit" class="button">Submit</button>
+        <a class="button" href="/api" target="_self">Cancel</a>
+      </div>
+    </form>
+    <%- include ('./partials/error-message') -%>
+  </section>
+</main>

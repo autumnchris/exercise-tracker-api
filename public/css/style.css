@@ -1,11 +1,14 @@
 /* BASE PAGE STYLES */
 
-html {
-  background: transparent;
+* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: hsl(0, 0%, 100%);
+}
+
+html {
+  background: transparent;
   font-family: Oxygen, sans-serif;
+  font-size: 0.9rem;
   height: 100%;
   letter-spacing: 1px;
 }
@@ -14,7 +17,7 @@ body {
   background: hsl(0, 0%, 11%);
   background: -o-linear-gradient(330deg, hsl(0, 0%, 11%), hsl(270, 18%, 19%)) fixed;
   background: linear-gradient(120deg, hsl(0, 0%, 11%), hsl(270, 18%, 19%)) fixed;
-  font-size: 0.9rem;
+  color: hsl(0, 0%, 100%);
   min-height: 100%;
   -ms-scroll-chaining: none;
   overscroll-behavior: none;
@@ -32,11 +35,7 @@ header {
 main {
   margin: 0 auto;
   max-width: 600px;
-  padding: 5px 0 6rem;
-}
-
-section {
-  padding-top: 30px;
+  padding-bottom: 6rem;
 }
 
 h1,
@@ -45,25 +44,56 @@ h3,
 h4,
 h5,
 h6 {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   margin-top: 0;
 }
 
-/* BASE ELEMENT STYLES */
+h1 {
+  letter-spacing: 4px;
+}
 
-div,
-header,
-main,
-section,
-p,
-pre,
-form,
-label,
+h2 {
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+section {
+  padding-top: 30px;
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: hsl(270, 100%, 85%);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus,
+button:focus,
+details:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+  -webkit-box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
+  box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
+  outline: none;
+}
+
+button,
+button:hover,
+button:active,
+button:focus,
 input,
-hr {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+optgroup,
+select,
+textarea {
+  font-family: inherit;
 }
 
 p {
@@ -71,6 +101,46 @@ p {
   margin: 20px 0;
 }
 
+hr {
+  border: 0;
+  border-bottom: 1px solid hsl(0, 0%, 60%);
+}
+
+.api-description {
+  padding-top: 5px;
+  text-align: left;
+}
+
+/* Button styles */
+.button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button,
+.button:visited,
+.button:hover,
+.button:active,
+.button:focus {
+  background: hsl(270, 100%, 85%);
+  border: 0;
+  border-radius: 4px;
+  color: hsl(270, 100%, 25%);
+  cursor: pointer;
+  letter-spacing: 3px;
+  line-height: normal;
+  margin: 20px 5px 0;
+  padding: 10px;
+  width: auto;
+}
+
+.button:hover {
+  background: hsl(270, 100%, 82%);
+  text-decoration: none;
+}
+
+/* Code styles */
 code {
   background: hsl(270, 100%, 95%);
   border-radius: 2px;
@@ -94,22 +164,7 @@ pre code {
   white-space: pre;
 }
 
-hr {
-  border: 0;
-  border-bottom: 1px solid hsl(0, 0%, 60%);
-}
-
-button,
-button:hover,
-button:active,
-button:focus,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-}
-
+/* Form styles */
 input {
   border: 0;
   border-radius: 3px;
@@ -141,73 +196,6 @@ input::placeholder {
   color: hsl(0, 0%, 60%);
 }
 
-a,
-a:visited,
-a:hover,
-a:active,
-a:focus {
-  color: hsl(270, 100%, 85%);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:focus,
-button:focus,
-details:focus,
-input:focus,
-select:focus,
-textarea:focus,
-[tabindex]:focus {
-  -webkit-box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
-  box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
-  outline: none;
-}
-
-.button,
-.button:visited,
-.button:hover,
-.button:active,
-.button:focus {
-  background: hsl(270, 100%, 85%);
-  border: 0;
-  border-radius: 4px;
-  color: hsl(270, 100%, 25%);
-  cursor: pointer;
-  letter-spacing: 3px;
-  line-height: normal;
-  margin-top: 20px;
-  padding: 10px;
-  width: auto;
-}
-
-.button:hover {
-  background: hsl(270, 100%, 82%);
-  text-decoration: none;
-}
-
-/* SPECIFIC ELEMENT STYLES */
-
-h1 {
-  letter-spacing: 4px;
-}
-
-h2 {
-  letter-spacing: 3px;
-  text-align: center;
-}
-
-h3 {
-  letter-spacing: 2px;
-  padding-top: 20px;
-}
-
-.subsection {
-  padding-bottom: 15px;
-}
-
 form {
   padding-bottom: 25px;
 }
@@ -223,11 +211,36 @@ form {
   margin-bottom: 8px;
 }
 
+.required-field {
+  color: #ff5c5c;
+  cursor: help;
+}
+
+.required-field[title] {
+  text-decoration: none;
+}
+
+/* Message styles */
+.message {
+  border-radius: 5px;
+  line-height: 1.55;
+  margin: 20px 0;
+  max-width: 800px;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.error-message {
+  background: hsl(349, 96%, 95%);
+  border: 1px solid hsl(349, 96%, 90%);
+  color: hsl(349, 96%, 26%);
+}
+
 /* MEDIA QUERIES */
 
 @media all and (min-width: 500px) {
 
-  body {
+  html {
     font-size: inherit;
   }
 }

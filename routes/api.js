@@ -3,12 +3,24 @@ const userController = require('../controllers/user-controller');
 const exerciseController = require('../controllers/exercise-controller');
 const router = express.Router();
 
-router.post('/new-user', userController.createUser);
+router.get('/', (req, res, next) => {
+  res.render('index');
+});
 
-router.post('/add', exerciseController.addExercise);
+router.get('/user/new', (req, res, next) => {
+  res.render('user-form');
+});
+
+router.post('/user/new', userController.createUser);
+
+router.get('/exercise/new', (req, res, next) => {
+  res.render('exercise-form');
+});
+
+router.post('/exercise/new', exerciseController.addExercise);
 
 router.get('/users', userController.fetchUsers);
 
-router.get('/log/:userid', userController.fetchUserLog);
+router.get('/user/log/:userid', userController.fetchUserLog);
 
 module.exports = router;

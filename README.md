@@ -13,14 +13,16 @@ Inspired by the [Exercise Tracker challenge](https://www.freecodecamp.org/learn/
 * [EJS](https://ejs.co)
 * CSS3
 * [Moment.js](https://momentjs.com)
+* [validator.js](https://github.com/validatorjs/validator.js)
 * [dotenv](https://github.com/motdotla/dotenv)
 * [Normalize.css](https://necolas.github.io/normalize.css)
 * [Google Fonts](https://fonts.google.com)
+* [FontAwesome](https://fontawesome.com)
 * [nodemon](https://nodemon.io)
 
 ## Demo
 
-View project demo at [https://autumnchris-exercise-tracker.herokuapp.com](https://autumnchris-exercise-tracker.herokuapp.com).
+View project demo at [https://autumnchris-exercise-tracker.herokuapp.com/api](https://autumnchris-exercise-tracker.herokuapp.com/api).
 
 ## Instructions
 

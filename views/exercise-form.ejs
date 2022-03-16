@@ -1,0 +1,29 @@
+<%- include ('./partials/header-content') -%>
+<main>
+  <section>
+    <h2>Log an Exercise</h2>
+    <form class="add-exercise" method="post" novalidate>
+      <div class="form-group">
+        <label for="user-id">User ID <abbr class="required-field" title="The user ID is required." aria-label="required">*</abbr></label>
+        <input type="text" name="userID" value="<%= typeof data !== 'undefined' ? data.userID : '' %>" id="user-id" required />
+      </div>
+      <div class="form-group">
+        <label for="description">Description <abbr class="required-field" title="An exercise description is required." aria-label="required">*</abbr></label>
+        <input type="text" name="description" placeholder="e.g. jogging" value="<%= typeof data !== 'undefined' ? data.exercise.description : '' %>" id="description" required />
+      </div>
+      <div class="form-group">
+        <label for="duration">Duration (in minutes) <abbr class="required-field" title="The duration of the exercise is required." aria-label="required">*</abbr></label>
+        <input type="number" name="duration" placeholder="e.g. 30" value="<%= typeof data !== 'undefined' ? data.exercise.duration : '' %>" id="duration" required />
+      </div>
+      <div class="form-group">
+        <label for="date">Date (leave blank to submit current date)</label>
+        <input type="date" name="date" placeholder="YYYY-MM-DD" value="<%= typeof data !== 'undefined' && data.exercise.date ? data.exercise.dateInput : '' %>" id="date" />
+      </div>
+      <div class="button-group">
+        <button type="submit" class="button">Submit</button>
+        <a class="button" href="/api" target="_self">Cancel</a>
+      </div>
+    </form>
+    <%- include ('./partials/error-message') -%>
+  </section>
+</main>
