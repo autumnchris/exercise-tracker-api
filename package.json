@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/autumnchris/exercise-tracker-api/issues"
   },
-  "homepage": "https://autumnchris-exercise-tracker.herokuapp.com/api",
+  "homepage": "https://autumnchris-exercise-tracker-api.onrender.com/api",
   "dependencies": {
     "dotenv": "^16.0.0",
     "ejs": "^3.0.1",

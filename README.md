@@ -22,7 +22,7 @@ Inspired by the [Exercise Tracker challenge](https://www.freecodecamp.org/learn/
 
 ## Demo
 
-View project demo at [https://autumnchris-exercise-tracker.herokuapp.com/api](https://autumnchris-exercise-tracker.herokuapp.com/api).
+View project demo at [https://autumnchris-exercise-tracker-api.onrender.com/api](https://autumnchris-exercise-tracker-api.onrender.com/api).
 
 ## Instructions
 
