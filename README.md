@@ -12,6 +12,7 @@ Inspired by the [Exercise Tracker challenge](https://www.freecodecamp.org/learn/
 * [MongoDB](https://www.mongodb.com)
 * [EJS](https://ejs.co)
 * CSS3
+* JavaScript
 * [Moment.js](https://momentjs.com)
 * [validator.js](https://github.com/validatorjs/validator.js)
 * [dotenv](https://github.com/motdotla/dotenv)
