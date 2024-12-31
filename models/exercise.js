@@ -16,6 +16,9 @@ const ExerciseSchema = new Schema({
     type: Date,
     default: Date.now()
   }
+},
+{
+  strictQuery: true
 });
 
 // Virtual for the form input version of the exercise date

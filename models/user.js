@@ -17,6 +17,9 @@ const UserSchema = new Schema({
     min: [0, 'The exercise count cannot be less than 0.'],
     required: [true, 'The exercise count must be included.']
   }
+},
+{
+  strictQuery: true
 });
 
 const User = mongoose.model('User', UserSchema);
