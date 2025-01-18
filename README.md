@@ -8,11 +8,14 @@ Inspired by the [Exercise Tracker challenge](https://www.freecodecamp.org/learn/
 
 ## Built With
 * [Express.js](https://expressjs.com)
+* [Node.js](https://nodejs.org/en)
 * [Mongoose](https://mongoosejs.com)
 * [MongoDB](https://www.mongodb.com)
 * [EJS](https://ejs.co)
+* HTML5
 * CSS3
 * JavaScript
+* Vanilla JS
 * [Moment.js](https://momentjs.com)
 * [validator.js](https://github.com/validatorjs/validator.js)
 * [dotenv](https://github.com/motdotla/dotenv)
