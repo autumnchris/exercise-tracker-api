@@ -5,7 +5,7 @@
     <form class="new-user" method="post" novalidate>
       <div class="form-group">
         <label for="user">Username <abbr class="required-field" title="A username is required." aria-label="required">*</abbr></label>
-        <input type="text" name="username" value="<%= typeof data !== 'undefined' ? data.username : '' %>" id="user" required />
+        <input type="text" name="username" value="<%= typeof data !== 'undefined' ? data.username : '' %>" id="user" autocomplete="username" required />
       </div>
       <div class="button-group">
         <button type="submit" class="button">Submit</button>
