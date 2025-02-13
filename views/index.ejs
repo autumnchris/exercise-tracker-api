@@ -1,42 +1,44 @@
 <%- include ('./partials/header-content') -%>
 <main>
-  <section>
-    <h2>Creating a New User</h2>
-    <p><a href="/api/user/new" target="_self">Create a new user</a> to get a unique user ID that can be used to log new exercises.</p>
-  </section>
-  <section>
-    <h2>Logging a New Exercise</h2>
-    <p><a href="/api/exercise/new" target="_self">Add an exercise</a> using the unique user ID you created.</p>
-  </section>
-  <section>
-    <h2>Retrieving a List of Users</h2>
-    <p>To get the list of all the registered users, go to the route:</p>
-    <pre>
-      <code class="api-link">https://autumnchris-exercise-tracker-api.onrender.com/api/users</code>
-      <button type="button" class="button copy-button api-users" title="Copy to clipboard" aria-label="copy to clipboard"><span class="copy-icon fa-regular fa-copy"></span></button>
-    </pre>
-  </section>
-  <section>
-    <h2>Retrieving Exercise Data for a User</h2>
-    <p>To get data for a specific user, go to the path, <code>/api/user/log</code>, and then add a parameter of the user's ID. For example, if I wanted to get the data for the user whose ID is <code>622f7319f705a6ace2af5c6f</code>, I would go to the route:</p>
-    <pre>
-      <code class="api-link">https://autumnchris-exercise-tracker-api.onrender.com/api/user/log/622f7319f705a6ace2af5c6f</code>
-      <button type="button" class="button copy-button api-user-log" title="Copy to clipboard" aria-label="copy to clipboard"><span class="copy-icon fa-regular fa-copy"></span></button>
-    </pre>
-    <p>You can also filter the list of exercise logs that get returned. One method involves limiting the number of logs, such as:</p>
-    <pre>
-      <code class="api-link">https://autumnchris-exercise-tracker-api.onrender.com/api/user/log/622f7319f705a6ace2af5c6f?limit=2</code>
-      <button type="button" class="button copy-button api-user-log-limit" title="Copy to clipboard" aria-label="copy to clipboard"><span class="copy-icon fa-regular fa-copy"></span></button>
-    </pre>
-    <p>You can also return logs that occur within a specific set of dates, such as:</p>
-    <pre>
-      <code class="api-link">https://autumnchris-exercise-tracker-api.onrender.com/api/user/log/622f7319f705a6ace2af5c6f?from=2022-03-12&to=2022-05-25</code>
-      <button type="button" class="button copy-button api-user-log-dates" title="Copy to clipboard" aria-label="copy to clipboard"><span class="copy-icon fa-regular fa-copy"></span></button>
-    </pre>
-    <p>You can also both limit the number of logs as well as select the date range, such as:</p>
-    <pre>
-      <code class="api-link">https://autumnchris-exercise-tracker-api.onrender.com/api/user/log/622f7319f705a6ace2af5c6f?from=2022-03-12&to=2022-05-25&limit=1</code>
-      <button type="button" class="button copy-button api-user-log-limit-and-dates" title="Copy to clipboard" aria-label="copy to clipboard"><span class="copy-icon fa-regular fa-copy"></span></button>
-    </pre>
-  </section>
+  <article>
+    <section class="section-lvl1">
+      <h2>Creating a New User</h2>
+      <p><a href="/api/user/new" target="_self">Create a new user</a> to get a unique user ID that can be used to log new exercises.</p>
+    </section>
+    <section class="section-lvl1">
+      <h2>Logging a New Exercise</h2>
+      <p><a href="/api/exercise/new" target="_self">Add an exercise</a> using the unique user ID you created.</p>
+    </section>
+    <section class="section-lvl1">
+      <h2>Retrieving a List of Users</h2>
+      <p>To get the list of all the registered users, go to the route:</p>
+      <pre>
+        <code class="api-link">https://autumnchris-exercise-tracker-api.onrender.com/api/users</code>
+        <button type="button" class="button copy-button api-users" title="Copy to clipboard" aria-label="copy to clipboard"><span class="copy-icon fa-regular fa-copy"></span></button>
+      </pre>
+    </section>
+    <section class="section-lvl1">
+      <h2>Retrieving Exercise Data for a User</h2>
+      <p>To get data for a specific user, go to the route below, replacing <code>&lt;your-user-id&gt;</code> with your user ID:</p>
+      <pre>
+        <code class="api-link">https://autumnchris-exercise-tracker-api.onrender.com/api/user/log/&lt;your-user-id&gt;</code>
+        <button type="button" class="button copy-button api-user-log" title="Copy to clipboard" aria-label="copy to clipboard"><span class="copy-icon fa-regular fa-copy"></span></button>
+      </pre>
+      <p>You can also filter the list of exercise logs that get returned. One method involves limiting the number of logs, such as:</p>
+      <pre>
+        <code class="api-link">https://autumnchris-exercise-tracker-api.onrender.com/api/user/log/&lt;your-user-id&gt;?limit=&lt;number-of-logs&gt;</code>
+        <button type="button" class="button copy-button api-user-log-limit" title="Copy to clipboard" aria-label="copy to clipboard"><span class="copy-icon fa-regular fa-copy"></span></button>
+      </pre>
+      <p>You can also filter logs that occur within a specific set of dates written in <code>YYYY-MM-DD</code> formatting, such as:</p>
+      <pre>
+        <code class="api-link">https://autumnchris-exercise-tracker-api.onrender.com/api/user/log/&lt;your-user-id&gt;?from=&lt;earliest-date&gt;&to=&lt;latest-date&gt;</code>
+        <button type="button" class="button copy-button api-user-log-dates" title="Copy to clipboard" aria-label="copy to clipboard"><span class="copy-icon fa-regular fa-copy"></span></button>
+      </pre>
+      <p>You can also both limit the number of logs as well as select the date range, such as:</p>
+      <pre>
+        <code class="api-link">https://autumnchris-exercise-tracker-api.onrender.com/api/user/log/&lt;your-user-id&gt;?from=&lt;earliest-date&gt;&to=&lt;latest-date&gt;&limit=&lt;number-of-logs&gt;</code>
+        <button type="button" class="button copy-button api-user-log-limit-and-dates" title="Copy to clipboard" aria-label="copy to clipboard"><span class="copy-icon fa-regular fa-copy"></span></button>
+      </pre>
+    </section>
+  </article>
 </main>
