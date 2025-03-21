@@ -16,10 +16,10 @@
         document.addEventListener('click', event => {
           const element = event.target;
           element.matches('.copy-button.api-users') ? copyText('https://autumnchris-exercise-tracker-api.onrender.com/api/users') : null;
-          element.matches('.copy-button.api-user-log') ? copyText('https://autumnchris-exercise-tracker-api.onrender.com/api/user/log/622f7319f705a6ace2af5c6f') : null;
-          element.matches('.copy-button.api-user-log-limit') ? copyText('https://autumnchris-exercise-tracker-api.onrender.com/api/user/log/622f7319f705a6ace2af5c6f?limit=2') : null;
-          element.matches('.copy-button.api-user-log-dates') ? copyText('https://autumnchris-exercise-tracker-api.onrender.com/api/user/log/622f7319f705a6ace2af5c6f?from=2022-03-12&to=2022-05-25') : null;
-          element.matches('.copy-button.api-user-log-limit-and-dates') ? copyText('https://autumnchris-exercise-tracker-api.onrender.com/api/user/log/622f7319f705a6ace2af5c6f?from=2022-03-12&to=2022-05-25&limit=1') : null;
+          element.matches('.copy-button.api-user-log') ? copyText('https://autumnchris-exercise-tracker-api.onrender.com/api/user/log/<your-user-id>') : null;
+          element.matches('.copy-button.api-user-log-limit') ? copyText('https://autumnchris-exercise-tracker-api.onrender.com/api/user/log/<your-user-id>?limit=<number-of-logs>') : null;
+          element.matches('.copy-button.api-user-log-dates') ? copyText('https://autumnchris-exercise-tracker-api.onrender.com/api/user/log/<your-user-id>?from=<earliest-date>&to=<latest-date>') : null;
+          element.matches('.copy-button.api-user-log-limit-and-dates') ? copyText('https://autumnchris-exercise-tracker-api.onrender.com/api/user/log/<your-user-id>?from=<earliest-date>&to=<latest-date>&limit=<number-of-logs>') : null;
         });
       }
 
